@@ -1,4 +1,7 @@
 // general functions
+function cus(){
+  document.getElementById('test').innerHTML = Get('https://www.hko.gov.hk/cis/front_uc.xml')
+}
 function Get(url){
   var Httpreq = new XMLHttpRequest();
   Httpreq.open("GET",url,false);
