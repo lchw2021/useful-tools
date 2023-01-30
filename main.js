@@ -1,6 +1,6 @@
 // general functions
 function cus(){
-  document.getElementById('test').innerHTML = Get('https://www.hko.gov.hk/cis/front_uc.xml')
+  document.getElementById('test').innerHTML = Get('https://cms.smg.gov.mo/zh_TW/api/imageseries/llis10')
 }
 function Get(url){
   var Httpreq = new XMLHttpRequest();
