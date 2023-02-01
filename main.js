@@ -1,7 +1,4 @@
 // general functions
-function cus(){
-  document.getElementById('test').innerHTML = Get('https://cms.smg.gov.mo/zh_TW/api/imageseries/llis10')
-}
 function Get(url){
   var Httpreq = new XMLHttpRequest();
   Httpreq.open("GET",url,false);
@@ -29,4 +26,10 @@ function placeHolder(i) {
     i = "0"+i
   }
   return i;
+}
+
+//opening functions
+function load12A(){
+  url = 'https://rt.data.gov.hk/v1.1/transport/citybus-nwfb/eta/CTB/001087/12A'
+  document.getElementById('test').innerHTML = Get(url)
 }
